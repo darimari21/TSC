@@ -37,15 +37,26 @@ LED indicator – semnalizează starea încărcării
 
 Configurația Pinilor ESP32-C6
 Componentă	Pin ESP32	Funcție
+
 BME688 – SDA	IO8	Linie date I2C
+
 BME688 – SCL	IO9	Linie ceas I2C
+
 DS3231SN – INT	IO10	Semnal întrerupere RTC
+
 W25Q512 – CS	IO4	Selectare chip SPI Flash
+
 E-paper – CS	IO3	Selectare chip SPI Display
+
 SPI – CLK	IO5	Semnal ceas SPI
+
 SPI – MOSI	IO6	Date de la master la slave
+
 SPI – MISO	IO7	Date de la slave la master
+
 MAX17048 – ALERT	IO11	Semnal alertă baterie
+
 Buton RESET	IO0	Reset / Boot
+
 SD Card – CS	IO2	Selectare chip card SD
 
