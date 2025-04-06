@@ -12,28 +12,53 @@ Arhitectură Generală a Sistemului
 Modulul ESP32-C6-WROOM-1-N8 servește drept unitate principală de control, gestionând comunicația cu celelalte module prin protocoale standard precum I2C, SPI și GPIO. Alimentarea este oferită de o baterie Li-Po, gestionată de un sistem de încărcare și monitorizare a nivelului energetic.
 
 Specificații Hardware
+
 Modul principal – ESP32-C6
+
 Microcontroler cu arhitectură RISC-V, suport Wi-Fi 6 și Bluetooth Low Energy
+
 Interfețe suportate: SPI, I2C, UART, GPIO
+
 Tensiune de alimentare: 3.3V
+
 Sistem de alimentare și monitorizare
+
 MCP73831 – controller pentru încărcarea bateriei Li-Po
+
 MAX17048 – circuit pentru monitorizarea nivelului bateriei (fuel gauge) cu ieșire de alertă
+
 XC6220A331MR – regulator de tensiune pentru stabilizarea la 3.3V
+
 Senzori și ceas de timp real
+
 BME688 – senzor multifuncțional pentru temperatură, umiditate, presiune și compuși volatili (VOC), comunicare I2C
+
 DS3231SN – modul RTC cu funcție de alarmă, conectat prin I2C
+
+
 Afișaj și memorie
 Display e-paper – eficient energetic, ideal pentru afișarea informațiilor statice
+
 W25Q512JVEIQ – memorie SPI externă de tip NOR, capacitate 64Mbit
+
 Slot pentru card SD – conectare opțională prin magistrala SPI partajată
+
 Protecție și comunicație
+
 USBLC6 – protecție ESD pentru liniile USB
+
 Diode Schottky – protecție împotriva supratensiunii
+
 Conector USB-C – folosit atât pentru alimentare, cât și pentru comunicație serială
+
 Elemente de interacțiune cu utilizatorul
+
 Buton de resetare (RESET)
+
 LED indicator – semnalizează starea încărcării
+
+
+
 
 Configurația Pinilor ESP32-C6
 Componentă	Pin ESP32	Funcție
